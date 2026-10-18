@@ -1,5 +1,20 @@
 # Factor Investing and Portfolio Optimization in Indian Equities
 
+## Table of Contents
+
+1. [Introduction](#1-introduction)
+2. [Research Objectives](#2-research-objectives)
+3. [Research Questions](#3-research-questions)
+4. [Data and Methodology](#4-data-and-methodology)
+5. [Results and Discussion](#5-results-and-discussion)
+6. [Limitations](#6-limitations)
+7. [Conclusion](#7-conclusion)
+8. [Future Work](#8-future-work)
+9. [Reproducibility](#9-reproducibility)
+10. [Disclaimer](#10-disclaimer)
+11. [References](#11-references)
+12. [Technical Notes](#12-technical-notes)
+
 ## Abstract
 
 This project investigates factor-based investing and portfolio optimization using a selected universe of Indian equities. The analysis combines historical stock-return and risk measurement, portfolio diversification, mean-variance optimization, momentum and low-volatility strategies, constrained portfolio construction, and walk-forward backtesting.
