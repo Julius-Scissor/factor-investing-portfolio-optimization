@@ -68,15 +68,15 @@ Since historical data providers may revise their records, rerunning the notebook
 
 For a price series \(P_t\), the simple daily return is calculated as
 
-\[
-r_t = \frac{P_t}{P_{t-1}} - 1.
-\]
+$$
+r_t = \frac{P_t}{P_{t-1}} - 1
+$$
 
 For a portfolio with asset weights \(w_i\) and asset returns \(r_{i,t}\), the portfolio return is
 
-\[
-r_{p,t} = \sum_{i=1}^{N} w_i r_{i,t},
-\]
+$$
+r_{p,t} = \sum_{i=1}^{N} w_i r_{i,t}
+$$
 
 provided the weights and returns are aligned for the same date.
 
