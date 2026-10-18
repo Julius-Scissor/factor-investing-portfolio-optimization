@@ -238,7 +238,7 @@ Several extensions could improve the scope and robustness of this research:
 3. Test multiple chronological out-of-sample periods and market regimes.
 4. Incorporate more realistic transaction costs and turnover constraints.
 5. Compare alternative covariance estimators and robust optimization methods.
-6. Evaluate performance across different rebalance frequencies
+6. Evaluate performance across different rebalance frequencies.
 
 ## 9. Reproducibility
 
