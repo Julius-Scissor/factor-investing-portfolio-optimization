@@ -152,11 +152,18 @@ These results illustrate that a higher annualized return does not necessarily im
 
 ### 5.2 Fixed-Weight Portfolio Optimization
 
-The fixed-weight optimization experiment compares equal-weight, minimum-variance, and maximum-Sharpe portfolios against the NIFTY 50 reference on a held-out test period.
+| Portfolio | Cumulative Return | Annualized Return | Annualized Volatility | Sharpe Ratio | Maximum Drawdown |
+|---|---:|---:|---:|---:|---:|
+| Equal-weight | 17.35% | 8.49% | 13.92% | 0.224 | -15.22% |
+| Minimum variance | 7.09% | 3.55% | 14.45% | -0.102 | -17.27% |
+| Maximum Sharpe | 18.60% | 9.07% | 17.28% | 0.241 | -21.73% |
+| NIFTY 50 | 20.24% | 9.84% | 12.97% | 0.326 | -15.77% |
 
-In the saved experiment, the NIFTY 50 reference outperformed the three portfolio allocations on cumulative return, annualized return, and Sharpe ratio. The maximum-Sharpe portfolio performed better than the equal-weight and minimum-variance portfolios among the three portfolio allocations, but did not exceed the benchmark.
+The evaluation used a chronological training and test split, with the held-out test period spanning January 1, 2024, through December 31, 2025. The test set contained 495 daily return observations.
 
-The minimum-variance portfolio had the weakest reported return and a negative Sharpe ratio in this test. This demonstrates that minimizing estimated portfolio variance does not guarantee superior realized performance.
+The NIFTY 50 benchmark outperformed all three portfolio allocations on cumulative return, annualized return, and Sharpe ratio. Among the portfolio allocations, the maximum-Sharpe portfolio achieved the highest cumulative and annualized returns, while the minimum-variance portfolio had the lowest annualized volatility.
+
+The minimum-variance portfolio nevertheless recorded a negative Sharpe ratio in the test period. This illustrates that minimizing estimated portfolio variance does not guarantee superior realized performance. These findings are specific to the selected assets, training window, optimization constraints, and evaluation period.
 
 ### 5.3 Sensitivity to Optimization Assumptions
 
