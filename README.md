@@ -67,6 +67,16 @@ The project is organized into 13 notebooks, progressing from data preparation to
 
 The universe contains only five stocks, and the findings depend on the selected sample period, strategy definitions, and transaction-cost assumptions. Historical backtests do not guarantee future performance.
 
+## Research Reports
+
+The project documentation is available in Markdown and PDF formats.
+
+- [**Standard Research Report (PDF)**](reports/Factor_Investing_Portfolio_Optimization_Report.pdf)
+- [**IEEE-Style Research Paper (PDF)**](reports/Factor_Investing_Portfolio_Optimization_IEEE_Report.pdf)
+- [**Editable Report (Markdown)**](reports/project_report.md)
+
+The reports document the research methodology, factor-strategy evaluation, portfolio optimization experiments, walk-forward backtesting, results, and limitations.
+
 ## Disclaimer
 
 This project is for educational and research purposes only. It is not investment advice.
