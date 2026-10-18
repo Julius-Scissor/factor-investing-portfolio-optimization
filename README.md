@@ -20,21 +20,25 @@ The analysis focuses on five Indian-listed stocks:
 
 Historical market data is retrieved using Python and Yahoo Finance.
 
-## Project Roadmap
+## Project Notebooks
 
-1. Data collection and preprocessing
-2. Stock performance and risk analysis
-3. Portfolio construction and diversification
-4. Modern Portfolio Theory
-5. Efficient frontier and Monte Carlo optimization
-6. Portfolio optimization using SciPy
-7. Factor strategy construction
-8. Factor strategy backtesting
-9. Strategy performance evaluation
-10. Portfolio optimization
-11. Constrained portfolio robustness
-12. Walk-forward portfolio backtesting
-13. Final analysis and investment report
+The project is organized into 13 notebooks, progressing from data preparation to factor research and portfolio optimization.
+
+| # | Notebook | Topics |
+|---:|---|---|
+| 1 | [Data Collection and Preprocessing](notebooks/01_Data_Collection_and_Preprocessing.ipynb) | Market data, cleaning, adjusted prices |
+| 2 | [Stock Performance and Risk Analysis](notebooks/02_Stock_Performance_and_Risk_Analysis.ipynb) | Returns, volatility, risk metrics |
+| 3 | [Portfolio Construction and Diversification](notebooks/03_Portfolio_Construction_and_Diversification.ipynb) | Portfolio weights, diversification |
+| 4 | [Modern Portfolio Theory](notebooks/04_Modern_Portfolio_Theory.ipynb) | Risk-return trade-offs |
+| 5 | [Efficient Frontier and Monte Carlo Optimization](notebooks/05_Efficient_Frontier_and_Monte_Carlo_Optimization.ipynb) | Random portfolios, efficient frontier |
+| 6 | [Portfolio Optimization Using SciPy](notebooks/06_Portfolio_Optimization_Using_SciPy.ipynb) | Numerical optimization |
+| 7 | [Factor Strategy Construction](notebooks/07_Factor_Strategy_Construction.ipynb) | Factor signals and portfolio formation |
+| 8 | [Factor Strategy Backtesting](notebooks/08_Factor_Strategy_Backtesting.ipynb) | Strategy returns and transaction costs |
+| 9 | [Strategy Performance Evaluation](notebooks/09_Strategy_Performance_Evaluation.ipynb) | Risk-adjusted performance comparison |
+| 10 | [Portfolio Optimization](notebooks/10_Portfolio_Optimization.ipynb) | Minimum variance, maximum Sharpe |
+| 11 | [Constrained Portfolio Robustness](notebooks/11_Constrained_Portfolio_Robustness.ipynb) | Weight caps, estimation sensitivity |
+| 12 | [Walk-Forward Portfolio Backtesting](notebooks/12_Walk_Forward_Portfolio_Backtesting.ipynb) | Rolling training and out-of-sample evaluation |
+| 13 | [Final Project Analysis and Investment Report](notebooks/13_Final_Project_Analysis_and_Investment_Report.ipynb) | Consolidated findings and limitations |
 
 ## Methods and Tools
 
