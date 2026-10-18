@@ -52,6 +52,7 @@ This study addresses the following questions:
 - How do momentum and low-volatility strategies compare with equal-weight portfolios in the selected sample?
 - Does mean-variance optimization improve out-of-sample performance relative to simpler allocation methods?
 - How sensitive are optimized portfolio weights to changes in estimation assumptions?
+- How do rolling portfolio strategies behave when transaction costs are included?
 
 ## 4. Data and Methodology
 
@@ -129,9 +130,6 @@ Transaction costs are modeled in the relevant backtesting experiments. The resul
 A fair comparison requires strategies to be evaluated over the same dates with consistent benchmark alignment, return definitions, and transaction-cost conventions.
 
 Results from experiments with different evaluation windows are therefore presented separately. Out-of-sample performance is emphasized because in-sample optimization results can overstate how well a strategy performs on unseen data.
-
-
-- How do rolling portfolio strategies behave when transaction costs are included?
 
 ## 5. Results and Discussion
 
