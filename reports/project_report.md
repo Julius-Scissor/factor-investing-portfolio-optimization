@@ -204,3 +204,47 @@ Several extensions could improve the scope and robustness of this research:
 4. Incorporate more realistic transaction costs and turnover constraints.
 5. Compare alternative covariance estimators and robust optimization methods.
 6. Evaluate performance across different rebalance frequencies
+
+## 11. References
+
+1. Markowitz, H. (1952). Portfolio Selection. *The Journal of Finance, 7*(1), 77–91. https://doi.org/10.1111/j.1540-6261.1952.tb01525.x
+
+2. Sharpe, W. F. (1966). Mutual Fund Performance. *The Journal of Business, 39*(1), 119–138. https://doi.org/10.1086/294846
+
+3. Yahoo Finance. Historical market data. https://finance.yahoo.com/
+
+4. yfinance documentation. https://ranaroussi.github.io/yfinance/
+
+5. NumPy documentation. https://numpy.org/doc/
+
+6. pandas documentation. https://pandas.pydata.org/docs/
+
+7. SciPy documentation. https://docs.scipy.org/doc/scipy/
+
+8. scikit-learn documentation. https://scikit-learn.org/stable/
+
+## 12. Technical Notes
+
+### Software and Libraries
+
+The project is implemented in Python using Jupyter notebooks. The principal libraries include:
+
+- **NumPy:** numerical computations and array operations.
+- **pandas:** time-series data handling and data analysis.
+- **Matplotlib:** charts and visualizations.
+- **SciPy:** numerical optimization.
+- **scikit-learn:** statistical and machine-learning utilities where applicable.
+- **yfinance:** retrieval of historical market data.
+- **Jupyter:** interactive notebook execution and documentation.
+
+### Reproducibility Considerations
+
+For reproducibility, notebooks should be executed in numerical order in a clean runtime where practical. The Python dependencies are listed in `requirements.txt`.
+
+The exact Python and library versions used for the reported results should be recorded when the final experiments are rerun. The historical data retrieval date should also be documented because the data provider may revise its records.
+
+### Performance Metric Conventions
+
+Performance metrics should be interpreted according to the calculation conventions implemented in the corresponding notebook. Annualization factors, risk-free-rate assumptions, return frequencies, missing-data treatment, and transaction-cost calculations can affect reported values.
+
+When comparing strategies, the same evaluation dates and benchmark-return conventions should be used. Results from separate experiments should remain clearly distinguished when their evaluation periods or implementation assumptions differ.
