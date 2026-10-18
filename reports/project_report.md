@@ -220,6 +220,16 @@ Several extensions could improve the scope and robustness of this research:
 5. Compare alternative covariance estimators and robust optimization methods.
 6. Evaluate performance across different rebalance frequencies
 
+## 9. Reproducibility
+
+The analysis is organized into numbered Jupyter notebooks, covering data collection, exploratory analysis, portfolio construction, factor strategies, optimization, robustness testing, and final evaluation.
+
+To reproduce the analysis, install the dependencies listed in `requirements.txt` and execute the notebooks in numerical order. Some results may vary because historical market data can be revised by the data provider.
+
+## 10. Disclaimer
+
+This project is an academic exercise in quantitative finance and portfolio research. The results are based on historical data and simulated strategies and should not be interpreted as investment advice or a guarantee of future performance.
+
 ## 11. References
 
 1. Markowitz, H. (1952). Portfolio Selection. *The Journal of Finance, 7*(1), 77–91. https://doi.org/10.1111/j.1540-6261.1952.tb01525.x
