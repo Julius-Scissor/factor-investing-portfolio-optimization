@@ -160,4 +160,47 @@ These findings should not be interpreted as a direct ranking across all strategi
 
 The broader lesson is that portfolio optimization is not guaranteed to improve realized out-of-sample performance. Simple allocation rules can remain competitive, while optimization-based allocations may be sensitive to estimation choices.
 
+## 6. Limitations
 
+Several limitations should be considered when interpreting the results.
+
+### 6.1 Limited Stock Universe
+
+The study considers only five Indian equities. Although these companies operate across multiple sectors, the universe is too narrow to represent the broader Indian equity market. Results may differ substantially for a larger universe that includes additional sectors and market-capitalization groups.
+
+### 6.2 Estimation Uncertainty
+
+Portfolio optimization depends on estimated expected returns and covariance matrices. These estimates are uncertain and may change with the sample period or estimation method. The observed sensitivity of portfolio weights indicates that optimized allocations should not be treated as uniquely reliable solutions.
+
+### 6.3 Historical Backtesting
+
+Backtests evaluate strategies using historical observations. Market conditions, correlations, volatility, and return patterns can change over time. Historical performance therefore does not establish that a strategy will perform similarly in the future.
+
+### 6.4 Trading-Cost Assumptions
+
+Transaction costs are modeled in the relevant experiments. Actual trading may involve additional costs, including taxes, bid-ask spreads, slippage, and market impact. Realized performance could consequently differ from simulated performance.
+
+### 6.5 Differences Between Experiments
+
+The notebooks use different evaluation windows and portfolio-construction procedures. Their performance figures should not be combined into a single ranking without aligning evaluation dates, benchmark returns, rebalancing assumptions, and transaction-cost conventions.
+
+## 7. Conclusion
+
+This project develops an end-to-end quantitative portfolio research workflow, covering historical market-data preparation, stock-level risk analysis, factor-strategy construction, mean-variance optimization, constrained allocation, robustness analysis, and walk-forward backtesting.
+
+The experiments demonstrate that the relative performance of portfolio strategies depends on the evaluation period and modeling assumptions. The low-volatility strategy performed strongly in the factor-strategy comparison, the NIFTY 50 reference performed strongly in the fixed-weight held-out experiment, and equal-weight remained competitive in walk-forward testing.
+
+The robustness analysis also showed that optimized portfolio weights can change substantially when estimation assumptions change. This highlights the importance of out-of-sample evaluation, realistic trading-cost assumptions, and careful interpretation of optimized allocations.
+
+The central conclusion is that mathematical optimization alone does not guarantee superior realized performance. A credible quantitative investment process must evaluate not only theoretical portfolio properties but also the stability and performance of strategies on unseen data.
+
+## 8. Future Work
+
+Several extensions could improve the scope and robustness of this research:
+
+1. Expand the stock universe to include more companies and sectors.
+2. Evaluate additional factor signals and alternative signal lookback windows.
+3. Test multiple chronological out-of-sample periods and market regimes.
+4. Incorporate more realistic transaction costs and turnover constraints.
+5. Compare alternative covariance estimators and robust optimization methods.
+6. Evaluate performance across different rebalance frequencies
