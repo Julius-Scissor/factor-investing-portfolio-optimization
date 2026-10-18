@@ -123,7 +123,7 @@ The project uses several complementary evaluation designs:
 - Robustness checks that vary portfolio constraints and estimation assumptions.
 - Walk-forward backtesting that repeatedly estimates portfolio weights using historical observations and evaluates subsequent returns.
 
-Transaction costs are modeled in the relevant backtesting experiments. The results depend on the cost assumptions and turnover calculation used by each notebook.
+Transaction-cost assumptions vary by experiment. The reported results should be interpreted according to the implementation and assumptions used in each notebook. Further work should assess the sensitivity of performance to realistic brokerage charges, taxes, bid-ask spreads, slippage, and market impact.
 
 ### 4.7 Evaluation Principles
 
