@@ -63,6 +63,15 @@ The project is organized into 13 notebooks, progressing from data preparation to
 - How sensitive are optimized allocations to estimation assumptions?
 - How do rolling strategies perform after modeled transaction costs?
 
+## Selected Findings
+
+- **Factor strategies:** The low-volatility strategy achieved a 17.07% CAGR in its evaluation experiment, compared with 12.33% for the equal-weight strategy.
+- **Portfolio optimization:** In the fixed-weight holdout experiment, the maximum-Sharpe portfolio achieved an 18.60% cumulative return, while the NIFTY 50 benchmark achieved 20.24%.
+- **Risk-adjusted performance:** The NIFTY 50 had a higher Sharpe ratio than the optimized portfolios in that holdout experiment.
+- **Walk-forward evaluation:** The equal-weight portfolio achieved a 32.10% cumulative return across the rolling evaluation, outperforming the two rolling optimized strategies in that experiment.
+
+*Note: These figures come from separate experiments with different evaluation windows and portfolio implementations. They should not be compared as though they came from one unified backtest. Results are historical and do not imply future performance.*
+
 ## Limitations
 
 The universe contains only five stocks, and the findings depend on the selected sample period, strategy definitions, and transaction-cost assumptions. Historical backtests do not guarantee future performance.
