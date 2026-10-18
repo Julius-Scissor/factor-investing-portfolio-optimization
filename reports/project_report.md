@@ -170,9 +170,15 @@ This sensitivity highlights a key limitation of mean-variance optimization: esti
 
 The walk-forward experiment repeatedly estimated portfolio weights using historical observations and evaluated subsequent returns. The saved results included a rolling minimum-variance portfolio, a rolling maximum-Sharpe portfolio, and an equal-weight reference portfolio.
 
-In this experiment, equal-weight achieved the highest reported cumulative return, annualized return, and Sharpe ratio among the three portfolios. The rolling minimum-variance portfolio had the least severe reported maximum drawdown.
+| Strategy | Cumulative Return | Annualized Return | Sharpe Ratio | Maximum Drawdown |
+|---|---:|---:|---:|---:|
+| Equal-weight | 32.10% | 10.10% | 0.336 | -15.22% |
+| Rolling minimum variance | 29.30% | 9.29% | 0.283 | -13.29% |
+| Rolling maximum Sharpe | 27.63% | 8.80% | 0.229 | -18.56% |
 
-The rolling maximum-Sharpe strategy did not outperform equal-weight in the saved test. This result reinforces the importance of testing optimized portfolios on data not used to estimate their weights.
+The walk-forward experiment evaluated 12 scheduled rebalances. Equal-weight achieved the highest cumulative return, annualized return, and Sharpe ratio among the three portfolios. The rolling minimum-variance portfolio had the least severe maximum drawdown, at -13.29%.
+
+The rolling maximum-Sharpe strategy did not outperform equal-weight in this experiment. These findings are specific to the selected stock universe, estimation windows, rebalancing schedule, and backtesting assumptions.
 
 ### 5.5 Overall Interpretation
 
