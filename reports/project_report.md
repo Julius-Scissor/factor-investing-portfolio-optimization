@@ -118,3 +118,46 @@ Results from experiments with different evaluation windows are therefore present
 
 - How do rolling portfolio strategies behave when transaction costs are included?
 
+## 5. Results and Discussion
+
+### 5.1 Factor Strategy Performance
+
+The factor-strategy experiment compares equal-weight, momentum, and low-volatility portfolios with the NIFTY 50 reference over the evaluation period reported in Notebook 9.
+
+In the saved experiment outputs, the low-volatility strategy achieved the highest reported compound annual growth rate (CAGR) among the three tested strategies, at 17.07%. Its reported Sharpe ratio was 0.983. The NIFTY 50 reference had a reported Sharpe ratio of 1.037, exceeding the three strategy portfolios in this comparison.
+
+These results illustrate that a strategy with a higher annualized return does not necessarily have the highest risk-adjusted performance. The results are specific to the selected stocks, signal definitions, and evaluation period.
+
+### 5.2 Fixed-Weight Portfolio Optimization
+
+The fixed-weight optimization experiment compares equal-weight, minimum-variance, and maximum-Sharpe portfolios against the NIFTY 50 reference on a held-out test period.
+
+In the saved experiment, the NIFTY 50 reference outperformed the three portfolio allocations on cumulative return, annualized return, and Sharpe ratio. The maximum-Sharpe portfolio performed better than the equal-weight and minimum-variance portfolios among the three portfolio allocations, but did not exceed the benchmark.
+
+The minimum-variance portfolio had the weakest reported return and a negative Sharpe ratio in this test. This demonstrates that minimizing estimated portfolio variance does not guarantee superior realized performance.
+
+### 5.3 Sensitivity to Optimization Assumptions
+
+The robustness experiment examined the effects of position limits, covariance estimation, and expected-return estimation windows.
+
+The saved outputs showed that optimized allocations changed materially when the covariance estimator or expected-return window changed. In particular, the maximum-Sharpe allocation to TCS and Infosys shifted substantially across the compared expected-return estimation windows.
+
+This sensitivity highlights a key limitation of mean-variance optimization: estimated expected returns and covariance matrices contain uncertainty. An optimizer can respond strongly to small changes in estimated inputs, producing allocations that may not remain stable out of sample.
+
+### 5.4 Walk-Forward Backtesting
+
+The walk-forward experiment repeatedly estimated portfolio weights using historical observations and evaluated subsequent returns. The saved results included a rolling minimum-variance portfolio, a rolling maximum-Sharpe portfolio, and an equal-weight reference portfolio.
+
+In this experiment, equal-weight achieved the highest reported cumulative return, annualized return, and Sharpe ratio among the three portfolios. The rolling minimum-variance portfolio had the least severe reported maximum drawdown.
+
+The rolling maximum-Sharpe strategy did not outperform equal-weight in the saved test. This result reinforces the importance of testing optimized portfolios on data not used to estimate their weights.
+
+### 5.5 Overall Interpretation
+
+Across the experiments, no single approach dominated every comparison. Low-volatility performed strongly in the factor-strategy experiment, the NIFTY 50 reference performed strongly in the fixed-weight held-out test, and equal-weight remained competitive in the walk-forward evaluation.
+
+These findings should not be interpreted as a direct ranking across all strategies because the experiments use different evaluation windows and portfolio-construction procedures. A fair unified comparison would require aligned dates, consistent benchmark returns, and common transaction-cost assumptions.
+
+The broader lesson is that portfolio optimization is not guaranteed to improve realized out-of-sample performance. Simple allocation rules can remain competitive, while optimization-based allocations may be sensitive to estimation choices.
+
+
