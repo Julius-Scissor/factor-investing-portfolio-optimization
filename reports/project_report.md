@@ -137,9 +137,18 @@ Results from experiments with different evaluation windows are therefore present
 
 The factor-strategy experiment compares equal-weight, momentum, and low-volatility portfolios with the NIFTY 50 reference over the evaluation period reported in Notebook 9.
 
-In the saved experiment outputs, the low-volatility strategy achieved the highest reported compound annual growth rate (CAGR) among the three tested strategies, at 17.07%. Its reported Sharpe ratio was 0.983. The NIFTY 50 reference had a reported Sharpe ratio of 1.037, exceeding the three strategy portfolios in this comparison.
+| Strategy | Cumulative Return | CAGR | Annualized Volatility | Sharpe Ratio | Maximum Drawdown |
+|---|---:|---:|---:|---:|---:|
+| Equal-weight | 75.29% | 12.33% | 15.33% | 0.836 | -15.96% |
+| Momentum | 69.17% | 11.51% | 17.16% | 0.721 | -22.25% |
+| Low-volatility | 113.90% | 17.07% | 17.62% | 0.983 | -25.38% |
+| NIFTY 50 | 91.64% | 14.43% | 13.94% | 1.037 | -17.23% |
 
-These results illustrate that a strategy with a higher annualized return does not necessarily have the highest risk-adjusted performance. The results are specific to the selected stocks, signal definitions, and evaluation period.
+The evaluation covers February 1, 2021, through December 31, 2025, with 1,216 daily observations.
+
+The low-volatility strategy achieved the highest CAGR among the three tested portfolio strategies, at 17.07%, and recorded a Sharpe ratio of 0.983. The NIFTY 50 benchmark recorded the highest Sharpe ratio in this comparison, at 1.037, alongside lower annualized volatility than the three strategies.
+
+These results illustrate that a higher annualized return does not necessarily imply the highest risk-adjusted performance. The findings are specific to the selected stocks, signal definitions, and evaluation period.
 
 ### 5.2 Fixed-Weight Portfolio Optimization
 
