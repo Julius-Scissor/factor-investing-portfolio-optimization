@@ -244,7 +244,7 @@ Several extensions could improve the scope and robustness of this research:
 
 The analysis is organized into numbered Jupyter notebooks, covering data collection, exploratory analysis, portfolio construction, factor strategies, optimization, robustness testing, and final evaluation.
 
-To reproduce the analysis, install the dependencies listed in `requirements.txt` and execute the notebooks in numerical order. Some results may vary because historical market data can be revised by the data provider.
+For reproducibility, notebooks should be executed in numerical order in a clean runtime where practical. The Python dependencies are listed in `requirements.txt`.
 
 ## 10. Disclaimer
 
